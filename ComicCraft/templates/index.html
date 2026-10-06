@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicCraft AI</title>
+</head>
+<body>
+    <h1>ComicCraft AI</h1>
+    <p>Create your own AI-powered comic.</p>
+
+    <form action="/generate" method="post">
+        <label>Story Prompt</label><br>
+        <textarea name="story_prompt" required></textarea><br><br>
+
+        <label>Character Name</label><br>
+        <input type="text" name="character_name" required><br><br>
+
+        <label>Setting</label><br>
+        <input type="text" name="setting" required><br><br>
+
+        <label>Tone</label><br>
+        <input type="text" name="tone" value="funny" required><br><br>
+
+        <label>Art Style</label><br>
+        <input type="text" name="art_style" value="comic book" required><br><br>
+
+        <button type="submit">Generate Comic</button>
+    </form>
+</body>
+</html>
